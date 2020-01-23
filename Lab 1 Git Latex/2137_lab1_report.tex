@@ -68,16 +68,29 @@
 
 \section*{Summary}
 
-This lab requires a student to follow an introduction to Git and LaTeX in order to submit a report. In doing this, the student gains skills in manipulating a pdf using Git and LaTeX software.   
+This lab requires a student to follow an introduction to Git and LaTeX in order to submit a report. In doing this, the student should be able to describe the basic Git process, synchronize local and remote files in a repo using GitHub, and create a lab report in LaTeX that includes images, code, lists, tables, and section headings.   
 
 
 \section*{Q\&A}
 
-Answer questions posed in the lab assignment here.
-
+\begin{enumerate}
+\item What is your GitHub user name?
+	
+	My user name is Alackey21.
+\item  What LaTeX environment produces a bulleted (non-numbered) list?
+	
+	The bulleted list without numbers is an itemize environment.
+\item  Write the equation $y(t) = 1/2 e^t$ using LaTeX equation formatting.
+	
+	$y(t) = \frac{1}{2} e^t$
+\item What is the shortcut key for compiling your LaTeX document?
+	
+	To only compile and not view your LaTeX document simply press the F6 button. 
+\end{enumerate}
 
 \section*{Results}
 
+This figures corresponding to the results section are included on the following page.
 \begin{figure}[ht]\centering
 	\begin{tabular}{c|c|c}
 		\toprule
@@ -98,10 +111,25 @@ Answer questions posed in the lab assignment here.
 	\caption{ This screenshot corresponds to step 1.5.3 in the Lab 1 instructions.}
 \end{figure}
 
-
+\clearpage
 \section*{Code}
 
-Include all of the code you wrote or modified here.
 
+\begin{lstlisting}[style=Verilog,
+caption=Direct Verilog code example,
+label=code:ex 
+]
+module example
+#(parameter BITS=4)
+(
+input [BITS-1:0] in0, in1,
+input sel,
+output [BITS-1:0] out
+);
+
+// Choose in1 or in0
+out = sel ? in1: in0; 
+endmodule
+\end{lstlisting}
 
 \end{document}
