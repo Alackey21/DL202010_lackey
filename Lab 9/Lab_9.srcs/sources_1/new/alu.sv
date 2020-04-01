@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps
-module  alu   #( parameter N=8)(output  reg[N -1:0] out ,
+module  alu #( parameter N=8)(output  reg[N -1:0] out ,
     input [N -1:0] in0 ,
-    input [N -1:0] in1 
-    ,input  [3:0] op);
+    input [N -1:0] in1, 
+    input  [3:0] op);
     // Local  parameters
-    parameter  ADD=0;
-    parameter  SUB=1;
-    parameter  AND=2;
-    parameter  OR=3;
-    parameter  XOR=4;
+    parameter  ADD = 0;
+    parameter  SUB = 1;
+    parameter  AND = 2;
+    parameter  OR = 3;
+    parameter  XOR = 4;
     always @*begin
         case(op)
             ADD: out = in0 + in1;// add  the  remaining  commands
