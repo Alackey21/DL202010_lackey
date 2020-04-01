@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-create_project -in_memory -part xc7k70tfbv676-1
+create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -27,13 +27,13 @@ set_property webtalk.parent_dir {C:/Users/anlac/OneDrive/Documents/GitHub/DL2020
 set_property parent.project_path {C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo {c:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   {C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv}
   {C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/register.sv}
   {C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/top_lab9.sv}
-  {C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/basys3_lab9.sv}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -64,12 +64,12 @@ set_property used_in_implementation false [get_files {{C:/Users/anlac/OneDrive/D
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top basys3_lab9 -part xc7k70tfbv676-1
+synth_design -top top_lab9 -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef basys3_lab9.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file basys3_lab9_utilization_synth.rpt -pb basys3_lab9_utilization_synth.pb"
+write_checkpoint -force -noxdef top_lab9.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file top_lab9_utilization_synth.rpt -pb top_lab9_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

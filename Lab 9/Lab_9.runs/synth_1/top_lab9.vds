@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr  1 17:21:33 2020
+# Process ID: 12468
+# Current directory: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.runs/synth_1
+# Command line: vivado.exe -log top_lab9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lab9.tcl
+# Log file: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.runs/synth_1/top_lab9.vds
+# Journal file: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_lab9.tcl -notrace
+Command: synth_design -top top_lab9 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10524 
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:7]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:8]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:9]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:10]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 372.469 ; gain = 100.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_lab9' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/top_lab9.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/register.sv:2]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/register.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:2]
+	Parameter N bound to: 8 - type: integer 
+	Parameter ADD bound to: 0 - type: integer 
+	Parameter SUB bound to: 1 - type: integer 
+	Parameter AND bound to: 2 - type: integer 
+	Parameter OR bound to: 3 - type: integer 
+	Parameter XOR bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (2#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_lab9' (3#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/top_lab9.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 405.625 ; gain = 133.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 405.625 ; gain = 133.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 405.625 ; gain = 133.824
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnC.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnD.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnD.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnU.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/btnU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/clock.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/led.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/switches.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 728.258 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 728.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 728.262 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 728.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 728.262 ; gain = 456.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 728.262 ; gain = 456.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 728.262 ; gain = 456.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:13]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 728.262 ; gain = 456.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 728.262 ; gain = 456.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 738.734 ; gain = 466.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     1|
+|4     |LUT3   |    15|
+|5     |LUT6   |     8|
+|6     |FDCE   |    16|
+|7     |IBUF   |    16|
+|8     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-----------+------+
+|      |Instance  |Module     |Cells |
++------+----------+-----------+------+
+|1     |top       |           |    75|
+|2     |  alutest |alu        |     2|
+|3     |  reg1    |register   |    32|
+|4     |  reg2    |register_0 |     8|
++------+----------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 758.961 ; gain = 164.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 758.961 ; gain = 487.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 13 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 761.016 ; gain = 489.215
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.016 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.runs/synth_1/top_lab9.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_lab9_utilization_synth.rpt -pb top_lab9_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  1 17:22:02 2020...
