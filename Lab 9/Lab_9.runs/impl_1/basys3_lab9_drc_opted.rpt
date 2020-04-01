@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Apr  1 15:46:00 2020
+| Date         : Wed Apr  1 16:00:44 2020
 | Host         : DESKTOP-6UBJ19M running 64-bit major release  (build 9200)
 | Command      : report_drc -file basys3_lab9_drc_opted.rpt -pb basys3_lab9_drc_opted.pb -rpx basys3_lab9_drc_opted.rpx
 | Design       : basys3_lab9

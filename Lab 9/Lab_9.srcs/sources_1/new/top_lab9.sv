@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module top_lab9(input btnU, btnD,
-    input [15:0] sw,
+    input [11:0] sw,
     input clk, btnC,
     output [15:0] led);
     
