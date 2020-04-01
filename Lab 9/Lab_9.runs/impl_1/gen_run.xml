@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1585713485">
-  <File Type="BITSTR-BMM" Name="alu_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="alu_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="alu_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="alu_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="alu.tcl"/>
-  <File Type="OPT-TIMING" Name="alu_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="alu_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="alu_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="alu_reports.tcl"/>
-  <File Type="OPT-DRC" Name="alu_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="alu.hwdef"/>
-  <File Type="PWROPT-DCP" Name="alu_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="alu_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="alu_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="alu_placed.dcp"/>
-  <File Type="PLACE-IO" Name="alu_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="alu_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="alu_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="alu_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="alu_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="alu_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="alu_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="alu.bgn"/>
-  <File Type="PLACE-TIMING" Name="alu_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="alu_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="alu.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="alu_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="alu_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="alu_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="alu.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="alu_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="alu_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="alu_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="alu_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="alu_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="alu_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1585773933">
+  <File Type="BITSTR-BMM" Name="basys3_lab9_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="basys3_lab9_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="basys3_lab9_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="basys3_lab9_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="basys3_lab9.tcl"/>
+  <File Type="OPT-TIMING" Name="basys3_lab9_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="basys3_lab9_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="basys3_lab9_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="basys3_lab9_reports.tcl"/>
+  <File Type="OPT-DRC" Name="basys3_lab9_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="basys3_lab9.hwdef"/>
+  <File Type="PWROPT-DCP" Name="basys3_lab9_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="basys3_lab9_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="basys3_lab9_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="basys3_lab9_placed.dcp"/>
+  <File Type="PLACE-IO" Name="basys3_lab9_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="basys3_lab9_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="basys3_lab9_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="basys3_lab9_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="basys3_lab9_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="basys3_lab9_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="basys3_lab9_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="basys3_lab9.bgn"/>
+  <File Type="PLACE-TIMING" Name="basys3_lab9_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="basys3_lab9_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="basys3_lab9.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="basys3_lab9_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="basys3_lab9_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="basys3_lab9_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="basys3_lab9.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="basys3_lab9_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="basys3_lab9_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="basys3_lab9_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="basys3_lab9_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="basys3_lab9_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="basys3_lab9_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="alu.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="alu_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="alu.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="alu_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alu_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="alu.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="alu_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="alu_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="alu_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="alu_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="alu_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="alu_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="alu_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="alu_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="alu_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="alu_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="alu_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="alu_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="alu_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="alu_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="alu_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="alu_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="alu_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="alu_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="alu_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="alu.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="alu_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="alu.rbt"/>
-  <File Type="BITSTR-NKY" Name="alu.nky"/>
-  <File Type="BG-DRC" Name="alu.drc"/>
-  <File Type="RDI-RDI" Name="alu.vdi"/>
+  <File Type="BITSTR-LTX" Name="basys3_lab9.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="basys3_lab9_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="basys3_lab9.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="basys3_lab9_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="basys3_lab9_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="basys3_lab9.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="basys3_lab9_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="basys3_lab9_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="basys3_lab9_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="basys3_lab9_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="basys3_lab9_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="basys3_lab9_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="basys3_lab9_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="basys3_lab9_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="basys3_lab9_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="basys3_lab9_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="basys3_lab9_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="basys3_lab9_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="basys3_lab9_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="basys3_lab9_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="basys3_lab9_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="basys3_lab9_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="basys3_lab9_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="basys3_lab9_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="basys3_lab9_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="basys3_lab9.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="basys3_lab9_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="basys3_lab9.rbt"/>
+  <File Type="BITSTR-NKY" Name="basys3_lab9.nky"/>
+  <File Type="BG-DRC" Name="basys3_lab9.drc"/>
+  <File Type="RDI-RDI" Name="basys3_lab9.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -80,7 +80,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/register.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -88,15 +87,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/top_lab9.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/basys3_lab9.sv">
+    <File Path="$PSRCDIR/sources_1/new/basys3_lab9.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -104,7 +101,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="alu"/>
+      <Option Name="TopModule" Val="basys3_lab9"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
