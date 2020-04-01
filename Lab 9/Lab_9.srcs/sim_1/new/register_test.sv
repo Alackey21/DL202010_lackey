@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// Ashlie Lackey, ELC 2137, 2020 -03 -26
 module  register_test ();
     reg  [3:0] D;
     reg clk , en , rst;

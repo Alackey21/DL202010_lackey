@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// Ashlie Lackey, ELC 2137, 2020 -03 -26
 module  alu #( parameter N=8)(output  reg[N -1:0] out ,
     input [N -1:0] in0 ,
     input [N -1:0] in1, 

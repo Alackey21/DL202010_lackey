@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// Ashlie Lackey, ELC 2137, 2020 -03 -26
 module  register  #( parameter N=1)
         (input clk , rst , en ,
         input [N -1:0] D,

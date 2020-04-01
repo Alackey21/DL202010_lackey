@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// Ashlie Lackey, ELC 2137, 2020 -03 -26
 module alu_test();
     wire[7:0] aluout;
     reg [7:0] aluin0;
