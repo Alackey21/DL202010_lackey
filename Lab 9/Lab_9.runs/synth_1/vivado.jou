@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr  1 17:21:33 2020
-# Process ID: 12468
+# Start of session at: Thu Apr  2 08:13:25 2020
+# Process ID: 16844
 # Current directory: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.runs/synth_1
 # Command line: vivado.exe -log top_lab9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lab9.tcl
 # Log file: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.runs/synth_1/top_lab9.vds

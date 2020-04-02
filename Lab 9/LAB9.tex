@@ -68,17 +68,11 @@
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
-
-
-\section*{Q\&A}
-
-Answer questions posed in the lab assignment here.
-
+The goal of this lab was to start on building a small calculator by creating an ALU and using two registers to do some mathematical operations including: addition, subtraction, AND, OR, and XOR, along with a default that returns the first number you input. The registers are used to store the numbers when inputting, as one input comes from the switches and the other comes from the register in which it is stored. Additionally, the switches are also used to specify which operation is to be performed. During this lab skills were gained to learn the differences between combinational and sequential logic and how to implement in Verilog, knowledge and some implementation of SR latches, D latches, D flip flops, and D registers, and reuse of modules from previous labs. 
 
 \section*{Results}
 
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
+Simulation waveforms, expected results tables, and pictures of the operations testing on the Basys3 board are included below to demonstrate that the ALU built during this lab works correctly.
 
 \subsection*{Expected results tables}
 \begin{table*}[ht]\centering
@@ -92,7 +86,7 @@ In this section, put your simulation waveforms, results tables, pictures of hard
 		en    & 0 & 0       & 1 & 1 & 1$\to$0 & 0$\to$1 & 1$\to$0 & 0 & 0$\to$1& 1 & 1 \\
 		rst   & 0 & 0$\to$1 & 0 & 0 & 0          & 0     & 0       & 0 & 0  & 0 & 0 \\
 		\midrule
-		Q (hex) & X & X$\to$0 & ?... &  &  &  & & & & & \\
+		Q (hex) & X & X$\to$0 & 0 & A & A & A & A & A & A & 6 & 6 \\
 		\bottomrule
 	\end{tabular}
 \end{table*}
@@ -111,6 +105,7 @@ In this section, put your simulation waveforms, results tables, pictures of hard
 		\bottomrule
 	\end{tabular}
 \end{table*}
+\clearpage
 
 \subsection*{Simulation Waveforms}
 \begin{figure}[ht]\centering
@@ -124,7 +119,11 @@ In this section, put your simulation waveforms, results tables, pictures of hard
 	\caption{\textit{ALU testbench} Simulation Waveform}
 	\label{fig:sim_with_table}
 \end{figure}
+\clearpage
 
+\subsection*{Operation On-board Testing}
+
+\clearpage
 \section*{Code}
 
 \begin{lstlisting}[style=Verilog,caption= register Verilog Code,label=code:ex ]
@@ -154,6 +153,7 @@ module  register  #( parameter N=1)
 endmodule
 \end{lstlisting}
 
+\clearpage
 \begin{lstlisting}[style=Verilog,caption= register testbench Verilog Code,label=code:ex ]
 `timescale 1ns / 1ps
 // Ashlie Lackey, ELC 2137, 2020 -03 -26
