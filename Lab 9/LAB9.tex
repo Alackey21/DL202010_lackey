@@ -68,7 +68,7 @@
 
 \section*{Summary}
 
-The goal of this lab was to start on building a small calculator by creating an ALU and using two registers to do some mathematical operations including: addition, subtraction, AND, OR, and XOR, along with a default that returns the first number you input. The registers are used to store the numbers when inputting, as one input comes from the switches and the other comes from the register in which it is stored. Additionally, the switches are also used to specify which operation is to be performed. During this lab skills were gained to learn the differences between combinational and sequential logic and how to implement in Verilog, knowledge and some implementation of SR latches, D latches, D flip flops, and D registers, and reuse of modules from previous labs. 
+The goal of this lab was to start on building a small calculator by creating an ALU and using two registers to do some mathematical operations including: addition, subtraction, AND, OR, and XOR, along with a default that returns in0. The registers are used to store the numbers when inputting, as one input comes from the switches and the other comes from the register in which it is stored. Additionally, the switches are also used to specify which operation is to be performed. During this lab skills were gained to learn the differences between combinational and sequential logic and how to implement in Verilog, understanding and some implementation of SR latches, D latches, D flip flops, and D registers, and reuse of modules from previous labs. 
 
 \section*{Results}
 
@@ -97,11 +97,11 @@ Simulation waveforms, expected results tables, and pictures of the operations te
 	\begin{tabular}{l|rrrrrr}
 		Time (ns): & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 \\
 		\midrule
-		in0 & 6  & 0 & C & A & 0 & 1 \\
-		in1 & 7 & 2 & 4 & A & 3 & 0 \\
+		in0 & 14  & 14 & 14 & 14 & 14 & 14 \\
+		in1 & 7A & 7A & 7A & 7A & 7A & 7A \\
 		op    & default & ADD(0) & SUB(1) & AND(2) & OR(3) & XOR(4) \\
 		\midrule
-		out & 6 & 2 & 8 & A & 3 & 1 \\
+		out & 14 & 8E & 9A & 10 & 7E & 6E \\
 		\bottomrule
 	\end{tabular}
 \end{table*}
@@ -123,47 +123,47 @@ Simulation waveforms, expected results tables, and pictures of the operations te
 
 \subsection*{Operation On-board Testing}
 
-NOTE: The operations testing specifies the inputs in the caption of each figure.
+NOTE: 7A was the initial input for the subtraction test to keep the outputs consistent with the ALU testbench simulation outputs.
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle=90, width=.8\textwidth]{default1}
 	\includegraphics[angle=90, width=.8\textwidth]{default2}
-	\caption{\textit{default} Board Test (14 default 0)}
+	\caption{\textit{default} Board Test}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle=90, width=.8\textwidth]{add1}
 	\includegraphics[angle=90, width=.8\textwidth]{add2}
-	\caption{\textit{add} Board Test (7A add 14)}
+	\caption{\textit{add} Board Test}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle=90, width=.8\textwidth]{sub1}
 	\includegraphics[angle=90, width=.8\textwidth]{sub2}
-	\caption{\textit{subtract} Board Test (7A sub 14)}
+	\caption{\textit{subtract} Board Test}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle=90, width=.8\textwidth]{and1}
 	\includegraphics[angle=90, width=.8\textwidth]{and2}
-	\caption{\textit{AND} Board Test (AA and AA)}
+	\caption{\textit{AND} Board Test}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle=90, width=.8\textwidth]{or1}
 	\includegraphics[angle=90, width=.8\textwidth]{or2}
-	\caption{\textit{OR} Board Test (3 or 0)}
+	\caption{\textit{OR} Board Test}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle=90, width=.8\textwidth]{xor1}
 	\includegraphics[angle=90, width=.8\textwidth]{xor2}
-	\caption{\textit{XOR} Board Test (0 xor 1)}
+	\caption{\textit{XOR} Board Test}
 	\label{fig:sim_with_table}
 \end{figure}
 \clearpage
@@ -265,12 +265,12 @@ module alu_test();
 	alu #(.N(8)) alutest(.out(aluout), .in0(aluin0), .in1(aluin1), .op(aluop));
 	
 	initial  begin
-		aluin0 = 8'h6; aluin1 = 8'h7; #10;
-		aluin0 = 8'h0; aluin1 = 8'h2; aluop = 4'h0; #10;
-		aluin0 = 8'hC; aluin1 = 8'h4; aluop = 4'h1; #10;
-		aluin0 = 8'hA; aluin1 = 8'hA; aluop = 4'h2; #10;
-		aluin0 = 8'h0; aluin1 = 8'h3; aluop = 4'h3; #10;
-		aluin0 = 8'h1; aluin1 = 8'h0; aluop = 4'h4; #10; 
+		aluin0 = 8'h14; aluin1 = 8'h7A; #10;
+		aluin0 = 8'h14; aluin1 = 8'h7A; aluop = 4'h0; #10;
+		aluin0 = 8'h14; aluin1 = 8'h7A; aluop = 4'h1; #10;
+		aluin0 = 8'h14; aluin1 = 8'h7A; aluop = 4'h2; #10;
+		aluin0 = 8'h14; aluin1 = 8'h7A; aluop = 4'h3; #10;
+		aluin0 = 8'h14; aluin1 = 8'h7A; aluop = 4'h4; #10; 
 		$finish;
 	end
 

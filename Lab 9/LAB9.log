@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.25)  2 APR 2020 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.25)  2 APR 2020 17:03
 entering extended mode
 **./LAB9.tex
 (LAB9.tex
@@ -474,11 +474,11 @@ File: register_test.png Graphic file (type png)
 <use register_test.png>
 Package pdftex.def Info: register_test.png  used on input line 112.
 (pdftex.def)             Requested size: 469.75502pt x 120.86902pt.
-<alu_test.png, id=18, 557.08125pt x 118.64325pt>
+<alu_test.png, id=18, 557.08125pt x 125.268pt>
 File: alu_test.png Graphic file (type png)
 <use alu_test.png>
 Package pdftex.def Info: alu_test.png  used on input line 118.
-(pdftex.def)             Requested size: 469.75502pt x 100.04704pt.
+(pdftex.def)             Requested size: 469.75502pt x 105.63344pt.
  [2
 
  <./register_test.png> <./alu_test.png>]
@@ -599,8 +599,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  8975 strings out of 480934
- 133069 string characters out of 2899917
- 717843 words of memory out of 3000000
+ 133071 string characters out of 2899917
+ 717821 words of memory out of 3000000
  24573 multiletter control sequences out of 15000+200000
  538012 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -615,7 +615,7 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
 sers/anlac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><C:/Users/anlac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb>
-Output written on LAB9.pdf (12 pages, 3763439 bytes).
+Output written on LAB9.pdf (12 pages, 3700388 bytes).
 PDF statistics:
  261 PDF objects out of 1000 (max. 8388607)
  139 named destinations out of 1000 (max. 500000)
