@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv,1585183394,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv,,an_decode,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv,1585183394,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv,,mux2,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv,1585183394,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv,,mux4,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv,1585183395,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv,,add3,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv,1585183395,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/counter.sv,,bcd11,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv,1582762377,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sim_2/new/sseg4_TDM_test.sv,,sseg_decoder,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_2/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sim_2/new/sseg4_TDM_test.sv,1586415434,systemVerilog,,,,sseg4_TDM_test,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/counter.sv,1586414254,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv,,counter,,,,,,,,
+C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv,1586414071,systemVerilog,,C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv,,sseg4_TDM,,,,,,,,

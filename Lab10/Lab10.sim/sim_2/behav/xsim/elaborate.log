@@ -1,0 +1,34 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1920d2ccfc4c4009bb62c9eea6e6fd6b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sseg4_TDM_test_behav xil_defaultlib.sseg4_TDM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:13]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:18]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'count' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:19]
+WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'B' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'sel' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:30]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'in' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:37]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'out' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:41]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:25]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:41]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:51]
+WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'B' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:41]
+WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'B' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:51]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter(N=18)
+Compiling module xil_defaultlib.counter(N=2)
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.bcd11
+Compiling module xil_defaultlib.mux2(N=16)
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.sseg_decoder
+Compiling module xil_defaultlib.an_decode
+Compiling module xil_defaultlib.mux2(N=7)
+Compiling module xil_defaultlib.sseg4_TDM
+Compiling module xil_defaultlib.sseg4_TDM_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sseg4_TDM_test_behav
