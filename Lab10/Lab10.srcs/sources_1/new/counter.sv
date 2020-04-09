@@ -5,7 +5,7 @@ module counter #( parameter N=1)
 input clk, rst, en,
     output [N-1:0] count ,
     output tick
-    ) ;
+    );
     // internal signals
     reg [N-1:0] Q_reg , Q_next ;
     // register ( state memory )
