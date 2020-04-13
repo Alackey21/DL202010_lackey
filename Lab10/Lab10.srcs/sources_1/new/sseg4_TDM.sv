@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-// Ashlie Lackey and Megan Gordon , ELC 2137 , 2020 -03 -05
+// Ashlie Lackey, ELC 2137 , 2020 -04 -13
 
 module sseg4_TDM(
     input [15:0] data,
