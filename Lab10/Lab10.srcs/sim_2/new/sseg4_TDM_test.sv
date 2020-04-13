@@ -16,17 +16,12 @@ module sseg4_TDM_test();
     clock = ~clock; #5;
     end 
     initial begin
-        data = 16'b0000010100110001; #5
-        clk =0; en =0; rst =0; D =4 ' h0 ; #7;
-        rst = 1; #3; // reset
-        D = 4 ' hA ; en = 1; rst = 0; #10;
-        D = 4 ' h3 ; #2;
-        en = 0; #5;
-        en = 1; #3;
-        D = 4 ' h0 ; #2;
-        en = 0; #10;
-        en = 1; #2;
-        D = 4 ' h6 ; #11;
+        data = 16'b0000010100110001; clock = 0; reset =0; #7;
+        reset = 1; #3; //  reset
+        hex_dec = 0; sign = 0; #5;
+        hex_dec = 1; sign = 1; #5;
+        hex_dec = 0; sign = 0; #5;
+        hex_dec = 1; sign = 1; #5;
         $finish;
     end
 
