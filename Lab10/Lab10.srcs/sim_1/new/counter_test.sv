@@ -2,10 +2,10 @@
 // Ashlie Lackey, ELC 2137, 2020 -04 -08
 module counter_test();
     reg clk , en , rst;
-    wire [3:0] count;
+    wire [1:0] count;
     wire tick;
     
-    counter #(.N(4)) c(.clk(clk),.en(en), .rst(rst), .count(count), .tick(tick) );
+    counter #(.N(2)) c(.clk(clk),.en(en), .rst(rst), .count(count), .tick(tick) );
     // clock  runs  continuously
     always  begin
         clk = ~clk; #5;

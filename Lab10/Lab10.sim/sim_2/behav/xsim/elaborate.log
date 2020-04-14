@@ -4,7 +4,6 @@ Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1920d2ccfc
 Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:13]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:18]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'count' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:19]
 WARNING: [VRFC 10-3091] actual bit length 35 differs from formal bit length 4 for port 'B' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:25]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'sel' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:30]

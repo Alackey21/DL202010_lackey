@@ -15,7 +15,7 @@ module sseg4_TDM(
     
     wire digit_sel;
     wire tick_dontcare;
-    counter #(.N(2)) counter2(.clk(tick_tocounter2),.en(1), .rst(reset),
+    counter #(.N(2)) counter2(.clk(clock),.en(tick_tocounter2), .rst(reset),
          .count(digit_sel), .tick(tick_dontcare) );
     
     wire [15:0] bcd11out ;
