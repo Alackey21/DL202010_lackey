@@ -9,13 +9,13 @@ module sseg4_TDM(
     output reg [3:0] an);
     
     wire [17:0] count_dontcare; 
-    wire tick_tocounter2;
+    wire tick_out;
     counter #(.N(18)) timer(.clk(clock),.en(1), .rst(reset), 
-        .count(count_dontcare), .tick(tick_tocounter2) );
+        .count(count_dontcare), .tick(tick_out) );
     
-    wire digit_sel;
+    wire [1:0] digit_sel;
     wire tick_dontcare;
-    counter #(.N(2)) counter2(.clk(clock),.en(tick_tocounter2), .rst(reset),
+    counter #(.N(2)) counter2(.clk(clock),.en(tick_out), .rst(reset),
          .count(digit_sel), .tick(tick_dontcare) );
     
     wire [15:0] bcd11out ;

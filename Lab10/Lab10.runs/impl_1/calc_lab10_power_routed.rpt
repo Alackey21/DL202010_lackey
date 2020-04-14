@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Apr 14 02:01:57 2020
+| Date             : Tue Apr 14 02:36:41 2020
 | Host             : DESKTOP-6UBJ19M running 64-bit major release  (build 9200)
 | Command          : report_power -file calc_lab10_power_routed.rpt -pb calc_lab10_power_summary_routed.pb -rpx calc_lab10_power_routed.rpx
 | Design           : calc_lab10
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.105        |
+| Total On-Chip Power (W)  | 0.099        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.033        |
+| Dynamic (W)              | 0.027        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,16 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      112 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       47 |     20800 |            0.23 |
+| Slice Logic    |    <0.001 |      122 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       53 |     20800 |            0.25 |
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
-|   Register     |    <0.001 |       43 |     41600 |            0.10 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
+|   Register     |    <0.001 |       44 |     41600 |            0.11 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |      118 |       --- |             --- |
-| I/O            |     0.031 |       45 |       106 |           42.45 |
+| Signals        |    <0.001 |      130 |       --- |             --- |
+| I/O            |     0.025 |       46 |       106 |           43.40 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.105 |          |           |                 |
+| Total          |     0.099 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -141,8 +140,8 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| calc_lab10  |     0.033 |
-|   calc_unit |     0.002 |
+| calc_lab10  |     0.027 |
+|   calc_unit |     0.001 |
 |     reg2    |     0.001 |
 +-------------+-----------+
 
