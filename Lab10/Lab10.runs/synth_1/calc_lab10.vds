@@ -1,0 +1,426 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 14 02:00:33 2020
+# Process ID: 8444
+# Current directory: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.runs/synth_1
+# Command line: vivado.exe -log calc_lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calc_lab10.tcl
+# Log file: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.runs/synth_1/calc_lab10.vds
+# Journal file: C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source calc_lab10.tcl -notrace
+Command: synth_design -top calc_lab10 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18892 
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:8]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:9]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:10]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:11]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:12]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 372.367 ; gain = 112.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'calc_lab10' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/calc_lab10.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'top_lab9' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/top_lab9.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/register.sv:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/register.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:3]
+	Parameter N bound to: 8 - type: integer 
+	Parameter ADD bound to: 0 - type: integer 
+	Parameter SUB bound to: 1 - type: integer 
+	Parameter AND bound to: 2 - type: integer 
+	Parameter OR bound to: 3 - type: integer 
+	Parameter XOR bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (2#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_lab9' (3#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/top_lab9.sv:3]
+WARNING: [Synth 8-689] width (16) of port connection 'sw' does not match port width (12) of module 'top_lab9' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/calc_lab10.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'sseg4_TDM' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/counter.sv:3]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/counter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/counter.sv:3]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (4#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/counter.sv:3]
+WARNING: [Synth 8-689] width (1) of port connection 'count' does not match port width (2) of module 'counter__parameterized0' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'bcd11' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'add3' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'add3' (5#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv:4]
+WARNING: [Synth 8-689] width (35) of port connection 'B' does not match port width (4) of module 'add3' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:25]
+WARNING: [Synth 8-689] width (35) of port connection 'B' does not match port width (4) of module 'add3' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:41]
+WARNING: [Synth 8-689] width (35) of port connection 'B' does not match port width (4) of module 'add3' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:51]
+INFO: [Synth 8-6155] done synthesizing module 'bcd11' (6#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (7#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv:4]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (8#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'sseg_decoder' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'sseg_decoder' (9#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'an_decode' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'an_decode' (10#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (10#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+WARNING: [Synth 8-689] width (8) of port connection 'out' does not match port width (7) of module 'mux2__parameterized0' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'sseg4_TDM' (11#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv:4]
+WARNING: [Synth 8-689] width (7) of port connection 'seg' does not match port width (8) of module 'sseg4_TDM' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/calc_lab10.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'calc_lab10' (12#1) [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.srcs/sources_1/new/calc_lab10.sv:3]
+WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.969 ; gain = 146.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.969 ; gain = 146.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.969 ; gain = 146.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnC.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnD.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnD.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnU.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/btnU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/clock.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/led.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/sseg.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/sseg.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/sseg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/switches.xdc]
+Finished Parsing XDC File [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/switches.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/switches.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 747.258 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 747.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 747.258 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 747.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 747.258 ; gain = 487.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 747.258 ; gain = 487.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 747.258 ; gain = 487.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab 9/Lab_9.srcs/sources_1/new/alu.sv:14]
+INFO: [Synth 8-5546] ROM "tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tick" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 747.258 ; gain = 487.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 15    
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 15    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module add3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module an_decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "disp_unit/timer/tick" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design calc_lab10 has port dp driven by constant 1
+WARNING: [Synth 8-3917] design calc_lab10 has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design calc_lab10 has port an[2] driven by constant 1
+WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[12]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 747.258 ; gain = 487.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 747.258 ; gain = 487.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |LUT3   |    16|
+|5     |LUT4   |     9|
+|6     |LUT5   |     4|
+|7     |LUT6   |    25|
+|8     |MUXF7  |     1|
+|9     |FDCE   |    35|
+|10    |IBUF   |    17|
+|11    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+------------------------+------+
+|      |Instance     |Module                  |Cells |
++------+-------------+------------------------+------+
+|1     |top          |                        |   146|
+|2     |  calc_unit  |top_lab9                |    70|
+|3     |    alutest  |alu                     |     2|
+|4     |    reg1     |register                |    32|
+|5     |    reg2     |register_0              |    36|
+|6     |  disp_unit  |sseg4_TDM               |    30|
+|7     |    counter2 |counter__parameterized0 |     2|
+|8     |    timer    |counter                 |    28|
++------+-------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 757.164 ; gain = 156.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 757.164 ; gain = 497.496
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 759.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 759.660 ; gain = 512.438
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 759.660 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.runs/synth_1/calc_lab10.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file calc_lab10_utilization_synth.rpt -pb calc_lab10_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 02:00:58 2020...
