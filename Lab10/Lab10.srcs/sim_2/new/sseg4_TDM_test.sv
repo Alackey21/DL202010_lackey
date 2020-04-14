@@ -16,16 +16,16 @@ module sseg4_TDM_test();
     clock = ~clock; #5;
     end 
     
-    //integer i;
+    integer i;
     
     initial begin
         data = 16'h0000; clock = 0; reset =0; #7;
         reset = 1; #3; //  reset
-        /*data = 16'h1234;*/ reset = 0; hex_dec = 0; sign = 0; #5;
-        /*for ( i =0; i <= 60000; i = i +1)begin 
-            hex_dec = 0; sign = 1; #5; 
-        end*/
-        hex_dec = 0; sign = 0; #1000000
+        data = 16'h1234;#5
+        reset = 0; hex_dec = 0; sign = 0; #5;
+        for ( i =0; i <= 100000; i = i +1)begin 
+            hex_dec = 0; sign = 0; #5; 
+        end
         $finish;
     end
 
