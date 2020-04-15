@@ -1,4 +1,4 @@
-Running: xsim.dir/sseg4_TDM_test_behav/xsimk.exe -simmode gui -wdb sseg4_TDM_test_behav.wdb -simrunnum 0 -socket 54969
+Running: xsim.dir/sseg4_TDM_test_behav/xsimk.exe -simmode gui -wdb sseg4_TDM_test_behav.wdb -simrunnum 0 -socket 55441
 Design successfully loaded
-Design Loading Memory Usage: 5248 KB (Peak: 5248 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 5228 KB (Peak: 5228 KB)
+Design Loading CPU Usage: 0 ms

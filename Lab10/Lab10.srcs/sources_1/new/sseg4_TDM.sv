@@ -4,7 +4,7 @@
 module sseg4_TDM(
     input [15:0] data,
     input hex_dec, sign, reset, clock,
-    output reg [7:0] seg,
+    output reg [6:0] seg,
     output reg dp,
     output reg [3:0] an);
     
