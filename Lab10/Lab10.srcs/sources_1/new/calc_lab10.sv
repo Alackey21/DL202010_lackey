@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+// Ashlie Lackey, ELC 2137, 2020 -04 -08
 module calc_lab10(input btnU, btnD,
     input [15:0] sw,
     input clk, btnC,
