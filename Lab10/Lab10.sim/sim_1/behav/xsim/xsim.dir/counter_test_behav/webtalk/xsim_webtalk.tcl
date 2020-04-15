@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Apr 14 23:44:53 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Apr 15 00:49:49 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "2a9ca419-07b2-4f59-b55e-036c8fa5e34f" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "1920d2ccfc4c4009bb62c9eea6e6fd6b" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "38" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "39" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz" -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "105 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.03_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "5828_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2791050429 -regid "" -xml C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.05_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "5820_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1341871004 -regid "" -xml C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
