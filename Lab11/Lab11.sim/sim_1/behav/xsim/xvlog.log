@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab11/debounce.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module debounce
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab11/debounce_test.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module debounce_test
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab11/Lab11.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
