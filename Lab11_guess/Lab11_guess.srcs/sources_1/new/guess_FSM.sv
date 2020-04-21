@@ -16,17 +16,22 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
         slose = 3'b101;
     
     reg [2:0] state, state_next;
+    reg [N-1:0] counter, counter_next;
     
     always_ff @(posedge clk or posedge reset)
         if(reset) begin
             state <= s0;
+            counter <= {N{1'b1}};
         end
         else begin
             state <= state_next;
+            counter <= counter_next;
         end
         
     always_comb  begin//  default  behavior
     state_next = state;
+    
+    counter_next = counter; 
     //tick = 0;
     
         case (state)
@@ -36,6 +41,8 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
                     state_next = swin;
                 else if (b[3] | b[2] | b[1])
                     state_next = lose;
+                else if (b[3] | b[2] | b[1] | b[0])
+                    state_next = state;
             end
             
             s1: begin
@@ -44,6 +51,8 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
                     state_next = swin;
                 else if (b[3] | b[2] | b[0])
                     state_next = lose;
+                else if (b[3] | b[2] | b[1] | b[0])
+                    state_next = state;
             end
             
             s2: begin
@@ -52,6 +61,8 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
                     state_next = swin;
                 else if (b[3] | b[1] | b[0])
                     state_next = lose;
+                else if (b[3] | b[2] | b[1] | b[0])
+                    state_next = state;
             end
             
             s3: begin
@@ -62,6 +73,8 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
                     state_next = lose;
                 else if (~b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = s0;
+                else if (b[3] | b[2] | b[1] | b[0])
+                    state_next = state;
             end
             
             swin: begin

@@ -7,13 +7,9 @@ module guess_FSM_test();
     wire [3:0]y;
     wire win, lose;
     
-    guess_FSM#(.N(2)) gFSM (.clk(clk), .reset(reset),.b(clk), .y(y), .win(win), .lose(lose));
+    guess_FSM #(.N(4)) gFSM (.clk(clk), .reset(reset),.b(clk), .y(y), .win(win), .lose(lose));
 
-//module  debounce_test ();
-    //reg clk , reset , in;
-    //wire out , tick;
-    integer i;
-    //debounce  #(.N(2)) db (.clk(clk), .reset(reset), .in(in), .out(out),.tick(tick));
+    //integer i;
     
     always  begin
         #5 clk = ~clk;
@@ -21,28 +17,21 @@ module guess_FSM_test();
     
     initial  begin
         clk =0;  reset =0; b=4'b0000;  #5;
-        reset =1;  #10;
+        reset =1;  #3;
         reset =0; #5;
         
-        //  cycle through states
-        for (i=0; i<4; i=i+1)  begin
-            #20 y[i]=~y[i];
-        end
+        b[0] = 1; #5;
         
-        b[0] = 1; #200;
-        
-        b[1] = 1; #200;
-        
-        b[2] = 1; #200;
-        
-        b[3] = 1; #200;
-        
-        for (i=0; i<4; i=i+1)  begin
-            #20 y[i]=~y[i];
-        end
+        b=4'b0000;  #10;
+        /*b[1] = 1; #5;
+        b=4'b0000;  #10;
+        b[2] = 1; #5;
+        b=4'b0000;  #10;
+        b[3] = 1; #5;*/
+        b=4'b0000;  #100;
         
         // hold  input = 0 for a while
-        b = 4'b0000; #200;
+        //b = 4'b0000; #200;
         $finish;
     end
 endmodule
