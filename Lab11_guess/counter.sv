@@ -1,8 +1,7 @@
 `timescale 1ns / 1ps
 // Ashlie Lackey, ELC 2137, 2020 -04 -08
 module counter #( parameter N=1)
-    (
-input clk, rst, en,
+    (input clk, rst, en,
     output [N-1:0] count ,
     output tick
     );
