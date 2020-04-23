@@ -95,6 +95,22 @@ Slow: (40\%)
 \subsection*{Expected results tables}
 
 \begin{table*}[ht]\centering
+	\caption{\textit{debounce} expected results table}
+	\label{ALU:tbl:alu_ERT}\medskip
+	\begin{tabular}{l|rrrrrrrrrrrrrrr}
+		Time (ns): & 0-5 & 5-15 & 15-40 & 40-60 & 60-80 & 80-100 & 100-120 & 120-140 & 140-160 & 160-180 & 180-200 & 200-235 & 235-245 & 245-440\\
+		\midrule
+		clk & 0  & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & ... \\
+		rst & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & ...\\
+		in & 0 & 0 & 1& 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & ... \\
+		\midrule
+		out & X & X & 0 & 0  & 1 & 1 & 2 & 2 & 3 & 3 & 0 & ... \\
+		tick & X & X & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0& ... \\
+		\bottomrule
+	\end{tabular}
+\end{table*}
+
+\begin{table*}[ht]\centering
 	\caption{\textit{guess\_FSM} expected results table}
 	\label{ALU:tbl:alu_ERT}\medskip
 	\begin{tabular}{l|rrrrrrrrrrrrr}
