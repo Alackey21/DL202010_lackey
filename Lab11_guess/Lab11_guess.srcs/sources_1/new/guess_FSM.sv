@@ -74,7 +74,6 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
             end
             
             swin: begin
-                //y = 4'b0000;
                 win = 1;
                 if (~b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = s0;
@@ -83,7 +82,6 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
             end
             
             slose: begin
-                //y = 4'b0000;
                 lose = 1;
                 if (~b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = s0;

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Apr 23 00:10:37 2020
+| Date         : Thu Apr 23 01:58:53 2020
 | Host         : DESKTOP-6UBJ19M running 64-bit major release  (build 9200)
 | Command      : report_drc -file guessing_game_drc_routed.rpt -pb guessing_game_drc_routed.pb -rpx guessing_game_drc_routed.rpx
 | Design       : guessing_game
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 6
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PDRC-153    | Warning  | Gated clock check                                           | 3          |
+| PDRC-153    | Warning  | Gated clock check                                           | 4          |
 | PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
@@ -50,7 +50,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net counter1/Q_reg_reg[0]_0 is a gated clock net sourced by a combinational pin counter1/FSM_onehot_state[5]_i_3/O, cell counter1/FSM_onehot_state[5]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net counter1/CLK is a gated clock net sourced by a combinational pin counter1/FSM_onehot_state[5]_i_3/O, cell counter1/FSM_onehot_state[5]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
@@ -61,6 +61,11 @@ Related violations: <none>
 PDRC-153#3 Warning
 Gated clock check  
 Net topmod/win_reg_i_1_n_0 is a gated clock net sourced by a combinational pin topmod/win_reg_i_1/O, cell topmod/win_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net topmod/y_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin topmod/y_reg[3]_i_1/O, cell topmod/y_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning

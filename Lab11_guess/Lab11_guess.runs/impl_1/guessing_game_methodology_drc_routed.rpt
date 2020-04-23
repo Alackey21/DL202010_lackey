@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Apr 23 00:10:38 2020
+| Date         : Thu Apr 23 01:58:54 2020
 | Host         : DESKTOP-6UBJ19M running 64-bit major release  (build 9200)
 | Command      : report_methodology -file guessing_game_methodology_drc_routed.rpt -pb guessing_game_methodology_drc_routed.pb -rpx guessing_game_methodology_drc_routed.rpx
 | Design       : guessing_game
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 15
+             Violations found: 12
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-14 | Warning  | LUT on the clock tree         | 1          |
-| TIMING-18 | Warning  | Missing input or output delay | 12         |
-| TIMING-20 | Warning  | Non-clocked latch             | 2          |
+| TIMING-18 | Warning  | Missing input or output delay | 5          |
+| TIMING-20 | Warning  | Non-clocked latch             | 6          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -64,41 +64,6 @@ Missing input or output delay
 An input delay is missing on btnU relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-18#6 Warning
-Missing input or output delay  
-An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#7 Warning
-Missing input or output delay  
-An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#8 Warning
-Missing input or output delay  
-An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#9 Warning
-Missing input or output delay  
-An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#10 Warning
-Missing input or output delay  
-An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#11 Warning
-Missing input or output delay  
-An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#12 Warning
-Missing input or output delay  
-An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
 TIMING-20#1 Warning
 Non-clocked latch  
 The latch topmod/lose_reg cannot be properly analyzed as its control pin topmod/lose_reg/G is not reached by a timing clock
@@ -107,6 +72,26 @@ Related violations: <none>
 TIMING-20#2 Warning
 Non-clocked latch  
 The latch topmod/win_reg cannot be properly analyzed as its control pin topmod/win_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch topmod/y_reg[0] cannot be properly analyzed as its control pin topmod/y_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch topmod/y_reg[1] cannot be properly analyzed as its control pin topmod/y_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch topmod/y_reg[2] cannot be properly analyzed as its control pin topmod/y_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch topmod/y_reg[3] cannot be properly analyzed as its control pin topmod/y_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 

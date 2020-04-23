@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Apr 23 00:10:38 2020
+| Date             : Thu Apr 23 01:58:54 2020
 | Host             : DESKTOP-6UBJ19M running 64-bit major release  (build 9200)
 | Command          : report_power -file guessing_game_power_routed.rpt -pb guessing_game_power_summary_routed.pb -rpx guessing_game_power_routed.rpx
 | Design           : guessing_game
@@ -53,11 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       71 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       25 |     20800 |            0.12 |
-|   Register     |    <0.001 |       26 |     41600 |            0.06 |
-|   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |    <0.001 |       44 |       --- |             --- |
+| Slice Logic    |    <0.001 |      109 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       31 |     20800 |            0.15 |
+|   Register     |    <0.001 |       52 |     41600 |            0.13 |
+|   CARRY4       |    <0.001 |        6 |      8150 |            0.07 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |       82 |       --- |             --- |
 | I/O            |    <0.001 |       34 |       106 |           32.08 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
@@ -70,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |
+| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

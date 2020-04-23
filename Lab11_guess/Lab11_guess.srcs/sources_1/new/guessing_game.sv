@@ -16,12 +16,10 @@ module guessing_game(input btnU, btnR, btnD, btnL, btnC,
     
     wire newclock;
     wire countdc;
-    counter #(.N(2)) counter1 (.clk(clk), .rst(btnC), .en(1) ,.count(countdc),.tick(newclock));
+    counter #(.N(24)) counter1 (.clk(clk), .rst(btnC), .en(1) ,.count(countdc),.tick(newclock));
     
     wire muxout;
-    mux2_4b (.in0(clk),
- .in1(newclock), .sel(sw[0]),
- .out(muxout));
+    mux2_4b (.in0(clk),.in1(newclock), .sel(sw[0]),.out(muxout));
     
     wire [3:0] yout;
     guess_FSM #(.N(4)) topmod (.clk(muxout), .reset(btnC), .b(dbo), .y(yout), .win(led[15]), .lose(led[0]));
