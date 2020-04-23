@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 // ELC 2137,  Ashlie Lackey, 2020 -04 -21
 module guess_FSM#(parameter N = 21)(input clk, reset,
-    input [3:0] b,
+    input reg [3:0] b,
     output reg [3:0] y,
     output reg win,
     output reg lose
@@ -16,81 +16,79 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
         slose = 3'b101;
     
     reg [2:0] state, state_next;
-    reg [N-1:0] counter, counter_next;
     
     always_ff @(posedge clk or posedge reset)
         if(reset) begin
             state <= s0;
-            counter <= {N{1'b1}};
         end
         else begin
             state <= state_next;
-            counter <= counter_next;
         end
         
-    always_comb  begin//  default  behavior
+    always_comb  begin
+    //  default  behavior
     state_next = state;
-    
-    counter_next = counter; 
-    //tick = 0;
+    y = 4'b0000; 
     
         case (state)
             s0: begin
-                y[0] = 1;
+                win = 0;
+                lose = 0;
+                y = 4'b0001;
                 if (~b[3] & ~b[2] & ~b[1] & b[0])
                     state_next = swin;
                 else if (b[3] | b[2] | b[1])
-                    state_next = lose;
-                else if (b[3] | b[2] | b[1] | b[0])
-                    state_next = state;
+                    state_next = slose;
+                else if (~b[3] & ~b[2] & ~b[1] & ~b[0])
+                    state_next = s1;
             end
             
             s1: begin
-                y[1] = 1;
+                y = 4'b0010;
                 if (~b[3] & ~b[2] & b[1] & ~b[0])
                     state_next = swin;
                 else if (b[3] | b[2] | b[0])
-                    state_next = lose;
-                else if (b[3] | b[2] | b[1] | b[0])
-                    state_next = state;
+                    state_next = slose;
+                else if (~b[3] & ~b[2] & ~b[1] & ~b[0])
+                    state_next = s2;
             end
             
             s2: begin
-                y[2] = 1;
+                y = 4'b0100;
                 if (~b[3] & b[2] & ~b[1] & ~b[0])
                     state_next = swin;
                 else if (b[3] | b[1] | b[0])
-                    state_next = lose;
-                else if (b[3] | b[2] | b[1] | b[0])
-                    state_next = state;
+                    state_next = slose;
+                else if (~b[3] & ~b[2] & ~b[1] & ~b[0])
+                    state_next = s3;
             end
             
             s3: begin
-                y[3] = 1;
+                y = 4'b1000;
                 if (~b[3] & ~b[2] & ~b[1] & b[0])
                     state_next = swin;
                 else if (b[2] | b[1] | b[0])
-                    state_next = lose;
+                    state_next = slose;
                 else if (~b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = s0;
-                else if (b[3] | b[2] | b[1] | b[0])
-                    state_next = state;
             end
             
             swin: begin
+                //y = 4'b0000;
                 win = 1;
                 if (~b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = s0;
                 else if (b[3] | b[2] | b[1] | b[0])
-                    state_next = state;
+                    state_next = swin;
             end
             
             slose: begin
+                //y = 4'b0000;
                 lose = 1;
                 if (~b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = s0;
                 else if (b[3] | b[2] | b[1] | b[0])
-                    state_next = state;
+                    state_next = slose;
             end
         endcase
     end
