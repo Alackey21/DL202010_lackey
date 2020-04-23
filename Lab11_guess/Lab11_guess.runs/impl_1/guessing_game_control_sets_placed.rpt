@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Apr 23 01:57:50 2020
+| Date         : Thu Apr 23 08:35:07 2020
 | Host         : DESKTOP-6UBJ19M running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file guessing_game_control_sets_placed.rpt
 | Design       : guessing_game
@@ -62,8 +62,8 @@ Table of Contents
 +--------------------------+------------------------------------+------------------+------------------+----------------+
 |       Clock Signal       |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +--------------------------+------------------------------------+------------------+------------------+----------------+
-|  topmod/lose_reg_i_1_n_0 |                                    |                  |                1 |              1 |
 |  topmod/win_reg_i_1_n_0  |                                    |                  |                1 |              1 |
+|  topmod/lose_reg_i_1_n_0 |                                    |                  |                1 |              1 |
 |  topmod/y_reg[3]_i_1_n_0 |                                    |                  |                1 |              4 |
 |  counter1/CLK            | topmod/FSM_onehot_state[5]_i_1_n_0 | btnC_IBUF        |                1 |              6 |
 |  clk_IBUF_BUFG           |                                    | btnC_IBUF        |                9 |             40 |

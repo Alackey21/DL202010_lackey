@@ -1,0 +1,19 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ec410a84414b483ead8b3086df0b53ec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ggame_test_behav xil_defaultlib.ggame_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 24 for port 'count' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab11_guess/Lab11_guess.srcs/sources_1/new/guessing_game.sv:19]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'in0' [C:/Users/anlac/OneDrive/Documents/GitHub/DL202010_lackey/Lab11_guess/Lab11_guess.srcs/sources_1/new/guessing_game.sv:22]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce(N=2)
+Compiling module xil_defaultlib.counter(N=24)
+Compiling module xil_defaultlib.mux2_4b
+Compiling module xil_defaultlib.guess_FSM(N=4)
+Compiling module xil_defaultlib.guessing_game
+Compiling module xil_defaultlib.ggame_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ggame_test_behav

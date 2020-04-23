@@ -13,6 +13,8 @@ module guess_FSM_test();
         #5 clk = ~clk;
     end
     
+    if
+    
     initial  begin
         clk =0;  reset =0; b=4'b0000; #5;
         reset =1;  #5;
