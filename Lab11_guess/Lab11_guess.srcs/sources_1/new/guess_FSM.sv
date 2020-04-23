@@ -28,7 +28,7 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
     always_comb  begin
     //  default  behavior
     state_next = state;
-    y = 4'b0000; 
+    //y = 4'b0000; 
     
         case (state)
             s0: begin
@@ -65,7 +65,7 @@ module guess_FSM#(parameter N = 21)(input clk, reset,
             
             s3: begin
                 y = 4'b1000;
-                if (~b[3] & ~b[2] & ~b[1] & b[0])
+                if (b[3] & ~b[2] & ~b[1] & ~b[0])
                     state_next = swin;
                 else if (b[2] | b[1] | b[0])
                     state_next = slose;

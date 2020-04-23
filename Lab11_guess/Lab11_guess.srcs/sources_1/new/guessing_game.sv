@@ -26,10 +26,10 @@ module guessing_game(input btnU, btnR, btnD, btnL, btnC,
     wire [3:0] yout;
     guess_FSM #(.N(4)) topmod (.clk(muxout), .reset(btnC), .b(dbo), .y(yout), .win(led[15]), .lose(led[0]));
     
-    assign seg[0] = yout[0];
-    assign seg[1] = yout[1];
-    assign seg[5] = yout[2];
-    assign seg[6] = yout[3];
+    assign seg[0] = ~yout[0];
+    assign seg[1] = ~yout[1];
+    assign seg[5] = ~yout[2];
+    assign seg[6] = ~yout[3];
     assign seg[4:2] = 3'b111;
     assign an[3:1] = 3'b111;
     assign an[0] = 0;

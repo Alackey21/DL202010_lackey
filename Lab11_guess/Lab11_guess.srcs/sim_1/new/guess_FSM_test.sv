@@ -8,8 +8,6 @@ module guess_FSM_test();
     wire win, lose;
     
     guess_FSM #(.N(4)) gFSM (.clk(clk), .reset(reset),.b(b), .y(y), .win(win), .lose(lose));
-
-    //integer i;
     
     always  begin
         #5 clk = ~clk;
@@ -20,29 +18,28 @@ module guess_FSM_test();
         reset =1;  #5;
         reset =0; #10;
         
+        
         b = 4'b0001; #10;
-         b = 4'b0000; /*reset = 1;*/  #5;
-        reset = 0; #5;
+        b = 4'b0000;  #17;
         
-        b = 4'b0000; #12;
         b = 4'b0010; #10;
+        b=4'b0000;  #35;
         
-        /*b = 4'b0010; #5;
-        b = 4'b0000; reset = 1;  #5;
-        reset = 0; #5;
+        b = 4'b0100; #10;
+        b = 4'b0000; #35;
         
-        b = 4'b0100; #5;
-         b = 4'b0000; reset = 1;  #5;
-        reset = 0; #5;
+        b = 4'b1000; #10;
+        b = 4'b0000; #13;
         
-        b = 4'b1000; #5;
-         b = 4'b0000; reset = 1; #5;
-        reset = 0; #5;*/ 
+        b = 4'b0010; #10;
+        b = 4'b0000; #20;
+     
+        b = 4'b0100; #10;
+        b = 4'b0000; #10;
         
-        b=4'b0000;  #100;
-        
-        // hold  input = 0 for a while
-        //b = 4'b0000; #200;
+        b = 4'b1000; #10;
+        b = 4'b0000; #10;
+        b = 4'b0001; #15; 
         $finish;
     end
 endmodule
