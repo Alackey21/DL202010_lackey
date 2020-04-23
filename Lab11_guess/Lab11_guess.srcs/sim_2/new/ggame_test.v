@@ -22,29 +22,20 @@ module ggame_test();
         btnC =1;  #5;
         btnC =0; #5;
         
-        btnD = 0; #2;
-        btnD = 1; #10;
+        btnD = 0; #10;
+        btnD = 1; #100;
         
-        btnD = 0; #330;
+        btnD = 0; #100;
+        
+        btnU = 1; #100;
         
         sw[0] = 1'b1;
         
-        btnD = 1; #40;
+        btnU = 0; #40;
         
         btnD = 0; #100;
         
         
-        /*btnR = 1; #7;
-        
-        btnR =0; #3;
-        
-        btnD = 1; #7;
-        
-        btnD = 0; #3;
-        
-        btnL = 1; #7;
-        
-        btnL = 0; #3;*/
         
         
         
