@@ -73,6 +73,8 @@ This lab sought the construction of a finite state machine, FSM, to handle an ir
 \begin{enumerate}
   \item At what time in the simulation did the debounce circuit reach each of the four states(zero, wait1, one, wait0)?
   
+  The simulation reached state wait1 at 200ns, one at 245ns, wait0 at 600ns, and zero at 645ns.
+  
   
   \item Why can this game not be implemented with regular sequential logic?
   
@@ -80,78 +82,47 @@ This lab sought the construction of a finite state machine, FSM, to handle an ir
   
   \item What type of outputs did you use for your design(Mealy or Moore)? Explain.
   
+  A Moore output was used for this design because at each state, the output was only dependent in the current state, not the present state and present input. This can be seen as at each "s" state, the y-value was set independent of the input. Additionally, with the swin and slose states, they set either win or lose to 1 when they were at that state, not dependent on how they got to the swin or slose states. 
 
 \end{enumerate}
 
 \section*{Results}
   
-Expected results table, simulation waveforms, and schematic drawings are included in this portion of the report.
-
+Board testing, expected results table, and simulation waveforms are included below
 \subsection*{Game Play Results on Two Settings}
-Fast:(20\%)
+Fast:(20\%) Lose, Win, Lose, Win, Lose, Lose, Lose, Lose, Lose, Lose
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle = 270, width=1\textwidth]{fast1}
-	\caption{\textit{fast test 1} Simulation Waveform}
+	\caption{\textit{fast test lose} display}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
 	\includegraphics[angle = 270, width=1\textwidth]{fast2}
-	\caption{\textit{fast test 2} Simulation Waveform}
+	\caption{\textit{fast test win} display}
+	\label{fig:sim_with_table}
+\end{figure}
+
+
+
+Slow: (40\%)  Win, Lose, Lose, Lose, Win, Win, Lose, Lose, Win, Lose
+
+\begin{figure}[ht]\centering
+	\includegraphics[angle = 270, width=1\textwidth]{slow1}
+	\caption{\textit{slow test win} display}
 	\label{fig:sim_with_table}
 \end{figure}
 
 \begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast3}
-	\caption{\textit{fast test 3} Simulation Waveform}
+	\includegraphics[angle = 270, width=1\textwidth]{slow2}
+	\caption{\textit{slow test lose} display}
 	\label{fig:sim_with_table}
 \end{figure}
 
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast4}
-	\caption{\textit{fast test 4} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
 
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 180, width=1\textwidth]{fast5}
-	\caption{\textit{fast test 5} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
 
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast6}
-	\caption{\textit{fast test 6} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
-
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast7}
-	\caption{\textit{fast test 7} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
-
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast8}
-	\caption{\textit{fast test 8} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
-
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast9}
-	\caption{\textit{fast test 9} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
-
-\begin{figure}[ht]\centering
-	\includegraphics[angle = 270, width=1\textwidth]{fast10}
-	\caption{\textit{fast test 10} Simulation Waveform}
-	\label{fig:sim_with_table}
-\end{figure}
-
-Slow: (40\%)
-
+\clearpage
 \subsection*{Expected results tables}
 
 %%\begin{table*}[ht]\centering
@@ -222,7 +193,7 @@ Slow: (40\%)
 \end{figure}
 
 \begin{figure}[ht]\centering
-	\includegraphics[width=1.1\textwidth]{gsfmtest}
+	\includegraphics[width=1.1\textwidth]{gguesstest}
 	\caption{\textit{guessing\_game testbench} Simulation Waveform}
 	\label{fig:sim_with_table}
 \end{figure}
@@ -416,7 +387,55 @@ endmodule
 \end{lstlisting}
 
 \begin{lstlisting}[style=Verilog,caption= guessing\_game testbench Verilog Code,label=code:ex ]
+`timescale 1ns / 1ps
+// ELC 2137,  Ashlie Lackey, 2020 -04 -21
+module ggame_test();
+	
+	reg btnU, btnR, btnD, btnL, btnC;
+	reg clk;
+	reg [15:0] sw;
+	wire [6:0] seg;
+	wire [3:0] an;
+	wire [15:0] led;
+	
+	guessing_game gg(.btnU(btnU), .btnR(btnR), .btnD(btnD), .btnL(btnL),
+		.btnC(btnC), .clk(clk), .sw(sw), .seg(seg), .an(an), .led(led));
+	
+	always  begin
+		#5 clk = ~clk;
+	end
+	
+	initial  begin
+		clk =0;  btnC =0; btnU = 0; btnR = 0;
+		btnD = 0; btnL = 0; 
+		sw[15:0] = 16'b0000000000000000; #5;
+		btnC =1;  #5;
+		btnC =0; #5;
+		
+		btnD = 0; #10;
+		btnD = 1; #100;
+		
+		btnD = 0; #100;
+		
+		btnU = 1; #100;
+		
+		btnU = 0; #100;
+		
+		btnL = 1; #100;
+		
+		btnL = 0; #100;
+		
+		btnR = 1; #100;
+		
+		btnR = 0; #100
+		
+		sw[0] = 1'b1; #500;
+		
+		
+		$finish;
+	end
 
+endmodule  
 \end{lstlisting}
 
 
