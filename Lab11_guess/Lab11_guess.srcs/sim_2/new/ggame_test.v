@@ -29,16 +29,17 @@ module ggame_test();
         
         btnU = 1; #100;
         
-        sw[0] = 1'b1;
+        btnU = 0; #100;
         
-        btnU = 0; #40;
+        btnL = 1; #100;
         
-        btnD = 0; #100;
+        btnL = 0; #100;
         
+        btnR = 1; #100;
         
+        btnR = 0; #100
         
-        
-        
+        sw[0] = 1'b1; #500;
         
         
         $finish;
